@@ -1,1 +1,1 @@
-# header-checker
+This is a simple web application header checker tool that allows you to check the HTTP headers returned by a given URL.
