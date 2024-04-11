@@ -16,7 +16,7 @@ def check_http_headers(url):
             url = "http://" + url
 
         # Send a GET request to the URL to retrieve the page content
-        response = requests.get(url)
+        response = requests.get(url, verify=False)  # Set verify to False to ignore SSL certificate errors
 
         # Print the status code of the response
         print(f"Response Status Code: {response.status_code}\n")
